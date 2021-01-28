@@ -1,0 +1,22 @@
+# objects
+objects =  hello-main.o hello-funct1.o hello.o
+#CC = gcc  
+CFLAGS = -Wall -g -c
+LIB = -lpthread
+
+all: hello
+
+hello: #(objects)
+	gcc -o hello-main.o hello-funct1.o hello.om6 $(LIB)
+
+hello-main.o:  hello-main.c
+	gcc -o $(CFLAGS) hello-main.c
+
+hello-funct1.o:	hello-funct1.c
+	gcc -o $(CFLAGS) hello-funct1.c
+
+hello.o: hello.h
+	gcc -o  $(CFLAGS) hello.h
+
+clean: 
+	rm -f $(objects) hello
