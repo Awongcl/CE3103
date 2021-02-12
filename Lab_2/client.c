@@ -50,7 +50,6 @@ int main(int argc, char *argv[]){
 	n = read(sockfd, buffer, 255);
 	if(n < 0)
 		error("Error reading from server\n");
-	int s = ntohs(buffer);
-	printf("Result after multiplying by 5: %d\n",s);
+	printf("Result after multiplying by 5: %s\n",buffer);
 	return 0;
 }
