@@ -1,17 +1,13 @@
 
+
 # objects
 objects = hello-main.o hello-funct1.o hello-funct2.o 
-#CC = gcc  
-CFLAGS = -Wall -g -c
 LIB = -lpthread
-
+CFLAGs = -o -WALL
 all: helloworld debug
 # Linking rules, -o command
 helloworld: $(objects)
 	gcc -pg -o helloworld hello-main.o hello-funct1.o hello-funct2.o $(LIB)
-
-debug: $(OBJECTS)
-	gcc -g -o helloworld-d hello-main.o hello-funct1.o hello-funct2.o $(LIB)
 
 #Below compile but not link
 hello-main.o:  hello-main.c

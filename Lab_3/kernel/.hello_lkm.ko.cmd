@@ -1,0 +1,1 @@
+cmd_/home/pi/Documents/Lab/Lab_3/kernal/hello_lkm.ko := ld -r  -EL  --build-id  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds -o /home/pi/Documents/Lab/Lab_3/kernal/hello_lkm.ko /home/pi/Documents/Lab/Lab_3/kernal/hello_lkm.o /home/pi/Documents/Lab/Lab_3/kernal/hello_lkm.mod.o;  true

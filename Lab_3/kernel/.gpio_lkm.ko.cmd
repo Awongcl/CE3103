@@ -1,0 +1,1 @@
+cmd_/home/pi/Documents/Lab/Lab_3/kernel/gpio_lkm.ko := ld -r  -EL  --build-id  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds -o /home/pi/Documents/Lab/Lab_3/kernel/gpio_lkm.ko /home/pi/Documents/Lab/Lab_3/kernel/gpio_lkm.o /home/pi/Documents/Lab/Lab_3/kernel/gpio_lkm.mod.o;  true
